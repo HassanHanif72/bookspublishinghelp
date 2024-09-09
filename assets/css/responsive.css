@@ -1,0 +1,398 @@
+/* For Google Chrome (125% zoom level) */
+@media screen and (-webkit-min-device-pixel-ratio: 1.25),
+screen and (min-resolution: 120dpi) {}
+
+@media (min-width: 1280px) and (max-width: 1366px) {
+    .bg-image.about-bg-image {
+     width: 92%;
+     margin-top: -90px;
+     }
+}
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .tabs-list .nav {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .tabs-list .nav .nav-item {
+    flex: 1 140px;
+  }
+
+  .top-banner .bg-image {
+    margin-top: 20px;
+  }
+
+  .top-banner .bg-image .box {
+    margin-bottom: 60px;
+  }
+
+
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .top-banner .right-col h1 {
+    font-size: 28px;
+    /* text-align: center; */
+  }
+
+  .top-banner .bg-image .container .row .col-lg-12 p.mb-0 {
+    text-align: center;
+  }
+
+  .top-banner p {
+    margin-bottom: 25px;
+    /* text-align: center; */
+  }
+
+  .top-banner .bg-image p {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .top-banner .bg-image {
+    margin: 25px auto 0;
+    z-index: 0;
+    height: auto;
+    padding: 0 0 35px;
+
+    .completed {
+      display: flex;
+
+      .box {
+        width: 100%;
+        margin-top: 30px;
+
+        >div {
+          justify-content: center;
+        }
+      }
+    }
+  }
+
+  .bg-image::after {
+    display: none;
+  }
+
+  .btnsec {
+    /* text-align: center; */
+  }
+
+  .professional,
+  .sec-5,
+  .sec-7 {
+    /* text-align: center; */
+
+    .right>h2,
+    .right>h3 {
+      font-size: 28px;
+    }
+  }
+
+  .slider-sec {
+    padding-top: 0;
+
+    .center-heading>h3 {
+      font-size: 28px;
+    }
+  }
+
+  .portfolio-tabs {
+    padding-top: 35px;
+    padding-bottom: 35px;
+
+    .center-heading>h3 {
+      font-size: 28px;
+    }
+
+    .tabs-list li.nav-item {
+      width: 100%;
+    }
+  }
+
+  .faqs .center-heading>h3 {
+    font-size: 28px;
+  }
+
+  .get-quote {
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    .center-heading>h3 {
+      font-size: 28px;
+    }
+
+    .left-col>h3 {
+      font-size: 28px;
+    }
+  }
+
+  .btn {
+    font-size: 14px;
+    padding: 12px 25px;
+  }
+
+  .footer {
+    text-align: center;
+    padding-top: 45px;
+    padding-bottom: 20px;
+
+    .social {
+      margin-bottom: 30px;
+    }
+
+    .footer-links>ul>li>a {
+      justify-content: center;
+    }
+  }
+
+  .tabs-list .nav {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .tabs-list .nav .nav-item {
+    width: 100% !important;
+    flex: 1 1 200px;
+  }
+
+  .tabs-list {
+    border-radius: 10px !important;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .top-banner .right-col h1 {
+    font-size: 28px;
+    text-align: center;
+  }
+  .book-1-content h4 {
+    font-size: 28px;
+  } 
+  .how-it-works-heading h4 {
+    font-size: 28px;
+  }
+  .book-editing-sec-2-top-content h4 {
+    font-size: 28px;
+  }
+  .our-work-content h4 {
+    font-size: 28px;
+  }
+  .top-banner p {
+    margin-bottom: 25px;
+    text-align: center;
+  }
+
+  .top-banner .bg-image p {
+    margin-top: 20px;
+  }
+
+  .top-banner .bg-image {
+    margin: 25px auto 0;
+    z-index: 0;
+    height: auto;
+    padding: 0 0 35px;
+
+    .completed {
+      display: flex;
+
+      .box {
+        width: 100%;
+        margin-top: 30px;
+
+        >div {
+          justify-content: center;
+        }
+      }
+
+      flex-wrap: wrap;
+    }
+  }
+
+  .bg-image::after {
+    display: none;
+  }
+
+  .btnsec {
+    text-align: center;
+  }
+
+  .professional,
+  .sec-5,
+  .sec-7 {
+    text-align: center;
+
+    .right>h2,
+    .right>h3 {
+      font-size: 28px;
+    }
+  }
+
+  .slider-sec {
+    padding-top: 0;
+
+    .center-heading>h3 {
+      font-size: 28px;
+    }
+  }
+
+  .portfolio-tabs {
+    padding-top: 35px;
+    padding-bottom: 35px;
+
+    .center-heading>h3 {
+      font-size: 28px;
+    }
+
+    .tabs-list li.nav-item {
+      width: 100%;
+    }
+  }
+
+  .faqs .center-heading>h3 {
+    font-size: 28px;
+  }
+
+  .get-quote {
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    .center-heading>h3 {
+      font-size: 28px;
+    }
+
+    .left-col>h3 {
+      font-size: 28px;
+    }
+  }
+
+  .btn {
+    font-size: 12px;
+    padding: 12px 14px;
+  }
+
+  .footer {
+    text-align: center;
+    padding-top: 45px;
+    padding-bottom: 20px;
+
+    .social {
+      margin-bottom: 30px;
+    }
+
+    .footer-links>ul>li>a {
+      justify-content: center;
+    }
+  }
+
+  .tabs-list .nav {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .tabs-list .nav .nav-item {
+    width: 100% !important;
+    flex: 1 1 200px;
+  }
+
+  .tabs-list {
+    border-radius: 10px !important;
+  }
+  .thanyou-banner h1 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 991px) {
+  .sec-7 .right {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+
+
+  .book-editing-sec-2-top-content {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .book-editing-sec-2 .img-box.animate-up {
+    display: none;
+  }
+
+  .book-editing-bottom-card {
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .book-editing-bottom-card-top {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .our-work-content {
+    align-items: center;
+  }
+
+  .book-1-sec-img {
+    display: none;
+  }
+
+
+  .book-1-content {
+    align-items: center;
+    text-align: center;
+  }
+
+  .bg-image.about-bg-image {
+    display: none;
+  }
+
+  .our-mission-list-main {
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-content: center;
+  }
+
+  .our-mission-content {
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+
+  .our-mission-list .box:after {
+    content: none;
+  }
+
+  .our-mission-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .our-mission-card h6 {
+    flex: 0 0 auto;
+  }
+}
+
+@media (max-width: 767px) {
+  .bg-image.about-bg-image, .learn-img.animate-up {
+    display: none;
+  }
+
+  .left.about-us-img-1 img {
+    display: none;
+  }
+
+  .img-box-content img {
+    display: none;
+  }
+
+  .book-1 {
+    margin: 0;
+  }
+}

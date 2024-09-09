@@ -1,0 +1,1188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Autobiography</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/favicon.ico" />
+    <!-- bootstrap 5.1 -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <!-- Style css -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- Responsive css -->
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <!-- AOS Animation -->
+    <link rel="stylesheet" href="assets/css/aos.css" />
+    <!-- Slick Carousel -->
+    <link rel="stylesheet" href="../cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" href="../cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="../cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+
+<body>
+    <!-- header -->
+    <header class="header">
+        <nav class="navbar navbar-expand-xl navbar-dark stroke bg-transparent">
+            <div class="container">
+                <a class="navbar-brand me-0" href="index.html">
+                    <img src="assets/images/logo.png" />
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link " href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="about-us.html">About Us</a>
+                        </li>
+                        <li class="nav-item dropdown navdesktop">
+                            <a class="nav-link " href="#">
+                                Services <i class="fa fa-angle-down"></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-navdesktop" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="book-editing.html">Book Editing</a></li>
+                                <li><a class="dropdown-item" href="book-marketing.html">Book Marketing</a></li>
+                                <li><a class="dropdown-item" href="book-publishing.html">Book Plublishing</a></li>
+                                <li><a class="dropdown-item" href="book-writing.html">Book Writing</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown navdesktop">
+                            <a class="nav-link " href="#">
+                                Genre <i class="fa fa-angle-down"></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-navdesktop" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="fiction-ghostwriting.html">Fiction GhostWriting</a>
+                                </li>
+                                <li><a class="dropdown-item" href="non-fiction-ghostwriting.html">Non Fiction
+                                        GhostWriting</a></li>
+                                <li><a class="dropdown-item" href="autobiography.html">Autobiography</a></li>
+                                <li><a class="dropdown-item" href="novel-writing.html">Novel Writing</a></li>
+                                <li><a class="dropdown-item" href="kids-book-writing.html">Kids Book</a></li>
+                                <li><a class="dropdown-item" href="mystery-book-writing.html">Mystery Book</a></li>
+                                <li><a class="dropdown-item" href="self-help-book-writing.html">Self Help</a></li>
+                            </ul>
+                        </li>
+                        <!-- <li class="nav-item">
+                        <a class="nav-link " href="#">
+                            Testimonial
+                        </a>
+                    </li> -->
+                        <li class="nav-item">
+                            <a class="nav-link " href="contact-us.html">
+                                Contact Us
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="my-2 my-lg-0 d-xl-block d-none">
+                    <a href="tel:(213) 291-8006" class="btn btn-theme">(213) 291-8006</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- popup -->
+    <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+        tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-md model-sec">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="row align-items-center">
+                        <div class="col-xl-12 col-lg-12 col-md-12">
+                            <div class="model-discount">
+                                <div class="d-block text-center align-items-center">
+                                    <div class="animate-div"><span>Get Your Quote Today and Avail 70% Discount</span>
+                                    </div>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <hr>
+                                <form method="POST" action="https://bookspublishinghelp.com/signup"
+                                    class="needs-validation" novalidate>
+                                    <div class="row">
+                                        <div class="col-xl-12 col-lg-12 col-md-12">
+                                            <div class="mb-3">
+                                                <label for="exampleInputEmail1" class="form-label">Name*</label>
+                                                <input type="text" class="form-control model-input"
+                                                    placeholder="Enter Name" pattern="[A-Za-z ]+" name="name" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-12 col-lg-12 col-md-12">
+                                            <div class="mb-3">
+                                                <label for="exampleInputEmail1" class="form-label">Email*</label>
+                                                <input type="email" class="form-control model-input"
+                                                    placeholder="Enter Email" name="email"
+                                                    pattern="[^\s@]+@[a-zA-Z]+[^0-9@]+\.[cC][oO][mM]$" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-12 col-lg-12 col-md-12">
+                                            <div class="mb-3">
+                                                <label for="exampleInputEmail1" class="form-label">Contact No*</label>
+                                                <input type="number" class="form-control model-input"
+                                                    placeholder="Enter Contact No." name="phone"
+                                                    onkeypress="if(this.value.length==12) return false;" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-12 col-lg-12 col-md-12">
+                                            <div class="mb-3">
+                                                <label for="exampleInputEmail1" class="form-label">Message</label>
+                                                <textarea class="form-control model-input"
+                                                    onkeypress="if(this.value.length==250) return false;" name="message"
+                                                    rows="3" cols="50" placeholder="Enter Message"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-12 col-lg-12 col-md-12">
+                                            <button type="submit" class="btn btn-theme mt-1 w-100">Submit</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end --> <!-- End header -->
+
+    <!-- section banner -->
+    <section class="top-banner">
+        <div class="container">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-xl-6 col-lg-6 col-md-6">
+                    <div class="right-col">
+                        <h1>Autobiography Ghost Writers to Craft Thought-Provoking Content</h1>
+                        <p>Do you want to write an autobiography that will motivate your audience but don’t have writing
+                            prowess? Then you need autobiography ghostwriting services from Books Publishing Help to
+                            craft a compelling book!</p>
+                        <div class="btnsec">
+                            <a href="#" data-bs-target="#exampleModalToggle" data-bs-toggle="modal"
+                                data-bs-dismiss="modal" class="btn btn-theme">Get Started</a>
+                            <a href="javascript:void(Tawk_API.toggle())" class="btn btn-theme-dark">Live Chat</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-6">
+                    <div class="learn-img animate-up">
+                        <img src="assets/images/autobiography-img.png" class="img-fluid" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-image about-bg-image">
+
+        </div>
+    </section>
+    <!-- End section -->
+
+    <!-- Start section -->
+    <section class="sec-7">
+        <div class="container">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-xl-6 col-lg-6 col-md-6">
+                    <div class="left text-center">
+                        <img src="assets/images/autobiography-img-1.png" class="img-fluid animate-up" alt="">
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-6">
+                    <div class="right">
+                        <h3>World-Class Autobiography Writing Services in the USA</h3>
+                        <p>Our Books Publishing Help is one of the leading ghostwriting service providers in the country
+                            with the highest success rate. We have been providing the finest services to clients from
+                            different states and are known for our commitment to quality and timely delivery. Writing an
+                            autobiography is challenging but our squad of knowledgeable and savvy writers understand its
+                            nitty-gritty and work hard on each project as their own.</p>
+                        <p>We believe in offering tailored solutions to clients depending on their goals, vision, and
+                            specific requirements. So what is holding you back now? Consult our customer service team to
+                            discuss your story and get a top-notch book written!</p>
+                        <div class="btnsec">
+                            <a href="#" data-bs-target="#exampleModalToggle" data-bs-toggle="modal"
+                                data-bs-dismiss="modal" class="btn btn-theme">Get Started</a>
+                            <a href="javascript:void(Tawk_API.toggle())" class="btn btn-theme-dark">Live Chat</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- End section -->
+
+    <!-- Start section -->
+    <section class="professional about-professional">
+        <div class=" bg-image">
+            <div class="container">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-xl-6 col-lg-6 col-md-6">
+                        <div class="right">
+                            <h2>Hire Autobiography Writers to Get Comprehensive Books Written</h2>
+                            <p>Are you wondering why should you hire Books Publishing Help when there are a lot of
+                                companies in the industry that claim to provide quality services? Yes, the question is
+                                valid. What makes us stand out from the rest is our expertise, experience, and
+                                dedication. Our team of master ghostwriters understands the intricacies of
+                                autobiographies and produces top-rated content that exceeds clients’ expectations. Which
+                                is the reason we get hundreds of orders every year and clients recommend us to people
+                                they know.</p>
+                            <div class="btnsec">
+                                <a href="#" data-bs-target="#exampleModalToggle" data-bs-toggle="modal"
+                                    data-bs-dismiss="modal" class="btn btn-theme">Get Started</a>
+                                <a href="javascript:void(Tawk_API.toggle())" class="btn btn-theme-dark">Live Chat</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6">
+                        <div class="left about-us-img-1 ">
+                            <img src="assets/images/autobiography-img-3.png" class="img-fluid animate-up" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End section -->
+
+
+
+
+
+
+
+    <!-- Start section -->
+    <section class="book-1">
+        <div class="container">
+            <div class="row align-items-center ">
+                <div class="col-lg-6 col-md-12">
+                    <div class="img-box-content book-1-sec-img animate-up">
+                        <img src="assets/images/book-sec-1-img.png" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <div class="book-1-content">
+                        <h4>Top-Tier Autobiography Ghost Writers</h4>
+                        <p>Our panel of savvy writers will prepare insightful and flawless content using their
+                            experience, your story, and skills in autobiography ghostwriting.
+                            Chat with Expert</p>
+                        <a href="#" class="btn btn-theme">Chat With Expert</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End section -->
+
+    <!-- Start section -->
+    <section class="how-it-works">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="how-it-works-heading">
+                        <h4>Our Autobiography Ghost Writers Craft Quality Content</h4>
+                        <p>Hundreds of clients select our ebook writing services and get their content produced by our
+                            specialists. Here are some qualities of our services. </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <div class="how-it-works-card none-bg ">
+                        <div class="icon"></div>
+                        <div class="how-it-works-card-content">
+                            <h6>Storytelling Expertise</h6>
+                            <p>Our ghostwriters are adept storytellers and have the prowess to convert your life
+                                experiences into a compelling narrative.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <div class="how-it-works-card none-bg ">
+                        <div class="icon"></div>
+                        <div class="how-it-works-card-content">
+                            <h6>Preservation of Authenticity</h6>
+                            <p>We will collaborate with you to keep your distinct voice intact and preserve your legacy,
+                                and emotional depth in the manuscript.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <div class="how-it-works-card none-bg ">
+                        <div class="icon"></div>
+                        <div class="how-it-works-card-content">
+                            <h6>Collaboration</h6>
+                            <p>Books Publishing Help believes in collaboration and will work closely with you, offering
+                                insights and suggestions to create a remarkable manuscript.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End section -->
+
+    <!-- Start section -->
+    <section class="book-editing-sec-2">
+        <div class="container">
+            <div class="book-editing-main">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12">
+                        <div class="img-box-content autobiography-img-3 animate-up">
+                            <img src="assets/images/autobiography-img-4.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <div class="book-editing-sec-2-top-content">
+                            <h4>Our Salient Features</h4>
+                            <p>We don't simply write your autobiography rather we work hard to make it an impeccable
+                                piece. Our savvy ghostwriters use their expertise along with your ideas to prepare a
+                                valuable book that impresses readers. </p>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="book-editing-bottom-card">
+                                    <div class="book-editing-bottom-card-top">
+                                        <div class="icon">
+                                            <i class="fa fa-check" aria-hidden="true"></i>
+                                        </div>
+                                        <h4>In-Depth Exploration</h4>
+                                    </div>
+                                    <p>We start with in-depth interviews to understand your life's journey. </p>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="book-editing-bottom-card">
+                                    <div class="book-editing-bottom-card-top">
+                                        <div class="icon">
+                                            <i class="fa fa-check" aria-hidden="true"></i>
+                                        </div>
+                                        <h4>Crafting Your Legacy</h4>
+                                    </div>
+                                    <p>Our ghostwriters identify the core themes you want to convey to audiences.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="book-editing-bottom-card">
+                                    <div class="book-editing-bottom-card-top">
+                                        <div class="icon">
+                                            <i class="fa fa-check" aria-hidden="true"></i>
+                                        </div>
+                                        <h4>Polished and Publishable</h4>
+                                    </div>
+                                    <p>We assign you a diligent editor to ensure the manuscript is polished.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End section -->
+
+    <!-- portfolio tabs-->
+
+    <section class="portfolio-tabs">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-7 col-lg-8 col-md-10">
+                    <div class="center-heading">
+                        <h3>Our Writers have Expertise in These Genres</h3>
+                        <p>
+                            We have a diverse team of writers with skills in crafting content in different genres. You
+                            can rest assured that you will get an exceptional-quality ebook regardless of your genre.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-xl-12 col-lg-12 col-md-12">
+                    <div class="tabs-list">
+                        <ul class="nav nav-pills justify-content-between" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="pills-fiction-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-fiction" type="button" role="tab"
+                                    aria-controls="pills-fiction" aria-selected="true">Fiction</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-nonfiction-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-nonfiction" type="button" role="tab"
+                                    aria-controls="pills-nonfiction" aria-selected="false">Non-Fiction</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-autobiography-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-autobiography" type="button" role="tab"
+                                    aria-controls="pills-autobiography" aria-selected="false">Autobiography</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-audio-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-audio" type="button" role="tab" aria-controls="pills-audio"
+                                    aria-selected="false">Audio Book</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-novel-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-novel" type="button" role="tab" aria-controls="pills-novel"
+                                    aria-selected="false">Novel Writing</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-kids-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-kids" type="button" role="tab" aria-controls="pills-kids"
+                                    aria-selected="false">Kids Book</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-mystery-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-mystery" type="button" role="tab"
+                                    aria-controls="pills-mystery" aria-selected="false">Mystery Book</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-self-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-self" type="button" role="tab" aria-controls="pills-self"
+                                    aria-selected="false">Self Help</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="row">
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-fiction" role="tabpanel"
+                                aria-labelledby="pills-fiction-tab">
+                                <div class="row justify-content-center">
+                                    <div class="col-xl-3 col-lg-3 col-md-4">
+                                        <div class="book-img">
+                                            <img src="assets/images/book-1.png" class="img-fluid" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-3 col-lg-3 col-md-4">
+                                        <div class="book-img">
+                                            <img src="assets/images/book-2.png" class="img-fluid" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-3 col-lg-3 col-md-4">
+                                        <div class="book-img">
+                                            <img src="assets/images/book-3.png" class="img-fluid" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-3 col-lg-3 col-md-4">
+                                        <div class="book-img">
+                                            <img src="assets/images/book-4.png" class="img-fluid" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-nonfiction" role="tabpanel"
+                                aria-labelledby="pills-nonfiction-tab">
+                                <div class="row justify-content-center">
+                                    <div class="col-xl-3 col-lg-3 col-md-4">
+                                        <div class="book-img">
+                                            <img src="assets/images/book-1.png" class="img-fluid" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-3 col-lg-3 col-md-4">
+                                        <div class="book-img">
+                                            <img src="assets/images/book-2.png" class="img-fluid" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-3 col-lg-3 col-md-4">
+                                        <div class="book-img">
+                                            <img src="assets/images/book-3.png" class="img-fluid" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-3 col-lg-3 col-md-4">
+                                        <div class="book-img">
+                                            <img src="assets/images/book-4.png" class="img-fluid" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-autobiography" role="tabpanel"
+                                aria-labelledby="pills-autobiography-tab">
+                                <div class="row justify-content-center">
+                                    <div class="col-xl-3 col-lg-3 col-md-4">
+                                        <div class="book-img">
+                                            <img src="assets/images/book-1.png" class="img-fluid" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-3 col-lg-3 col-md-4">
+                                        <div class="book-img">
+                                            <img src="assets/images/book-2.png" class="img-fluid" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-3 col-lg-3 col-md-4">
+                                        <div class="book-img">
+                                            <img src="assets/images/book-3.png" class="img-fluid" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-3 col-lg-3 col-md-4">
+                                        <div class="book-img">
+                                            <img src="assets/images/book-4.png" class="img-fluid" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-audio" role="tabpanel"
+                                aria-labelledby="pills-audio-tab">
+                                <div class="row justify-content-center">
+                                    <div class="col-xl-3 col-lg-3 col-md-4">
+                                        <div class="book-img">
+                                            <img src="assets/images/book-1.png" class="img-fluid" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-3 col-lg-3 col-md-4">
+                                        <div class="book-img">
+                                            <img src="assets/images/book-2.png" class="img-fluid" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-3 col-lg-3 col-md-4">
+                                        <div class="book-img">
+                                            <img src="assets/images/book-3.png" class="img-fluid" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-3 col-lg-3 col-md-4">
+                                        <div class="book-img">
+                                            <img src="assets/images/book-4.png" class="img-fluid" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-novel" role="tabpanel"
+                                aria-labelledby="pills-novel-tab">
+                                <div class="row justify-content-center">
+                                    <div class="col-xl-3 col-lg-3 col-md-4">
+                                        <div class="book-img">
+                                            <img src="assets/images/book-1.png" class="img-fluid" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-3 col-lg-3 col-md-4">
+                                        <div class="book-img">
+                                            <img src="assets/images/book-2.png" class="img-fluid" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-3 col-lg-3 col-md-4">
+                                        <div class="book-img">
+                                            <img src="assets/images/book-3.png" class="img-fluid" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-3 col-lg-3 col-md-4">
+                                        <div class="book-img">
+                                            <img src="assets/images/book-4.png" class="img-fluid" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-kids" role="tabpanel" aria-labelledby="pills-kids-tab">
+                                <div class="row justify-content-center">
+                                    <div class="col-xl-3 col-lg-3 col-md-4">
+                                        <div class="book-img">
+                                            <img src="assets/images/book-1.png" class="img-fluid" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-3 col-lg-3 col-md-4">
+                                        <div class="book-img">
+                                            <img src="assets/images/book-2.png" class="img-fluid" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-3 col-lg-3 col-md-4">
+                                        <div class="book-img">
+                                            <img src="assets/images/book-3.png" class="img-fluid" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-3 col-lg-3 col-md-4">
+                                        <div class="book-img">
+                                            <img src="assets/images/book-4.png" class="img-fluid" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-mystery" role="tabpanel"
+                                aria-labelledby="pills-mystery-tab">
+                                <div class="row justify-content-center">
+                                    <div class="col-xl-3 col-lg-3 col-md-4">
+                                        <div class="book-img">
+                                            <img src="assets/images/book-1.png" class="img-fluid" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-3 col-lg-3 col-md-4">
+                                        <div class="book-img">
+                                            <img src="assets/images/book-2.png" class="img-fluid" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-3 col-lg-3 col-md-4">
+                                        <div class="book-img">
+                                            <img src="assets/images/book-3.png" class="img-fluid" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-3 col-lg-3 col-md-4">
+                                        <div class="book-img">
+                                            <img src="assets/images/book-4.png" class="img-fluid" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-self" role="tabpanel" aria-labelledby="pills-self-tab">
+                                <div class="row justify-content-center">
+                                    <div class="col-xl-3 col-lg-3 col-md-4">
+                                        <div class="book-img">
+                                            <img src="assets/images/book-1.png" class="img-fluid" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-3 col-lg-3 col-md-4">
+                                        <div class="book-img">
+                                            <img src="assets/images/book-2.png" class="img-fluid" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-3 col-lg-3 col-md-4">
+                                        <div class="book-img">
+                                            <img src="assets/images/book-3.png" class="img-fluid" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-3 col-lg-3 col-md-4">
+                                        <div class="book-img">
+                                            <img src="assets/images/book-4.png" class="img-fluid" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> <!-- end -->
+
+
+    <!-- Start section -->
+    <section class="our-work">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-12">
+                    <div class="our-work-content">
+                        <h4>Our Work Process</h4>
+                        <p>We use a set work process that all our writers and editors follow to ensure high-quality
+                            work. Our team uses these steps as part of our autobiography writing.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <div class="our-work-cards-main">
+                        <div class="our-work-card">
+                            <div class="icon">1</div>
+                            <div class="our-work-card-content">
+                                <h6>In-Depth Consultations</h6>
+                                <p>We start with in-depth consultations to understand your life story, lessons, and
+                                    target audience.</p>
+                            </div>
+                        </div>
+                        <div class="our-work-card">
+                            <div class="icon">2</div>
+                            <div class="our-work-card-content">
+                                <h6>Drafting and Development</h6>
+                                <p>Our autobiography writer will produce chapters depending on the outline, refining it
+                                    as per your suggestions during the process.</p>
+                            </div>
+                        </div>
+                        <div class="our-work-card">
+                            <div class="icon">3</div>
+                            <div class="our-work-card-content">
+                                <h6>Revision </h6>
+                                <p>After finishing your autobiography, our editors will revise and edit it and ensure an
+                                    impeccable piece.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End section -->
+
+    <!-- Start section -->
+    <section class="testimonial">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="testimonial-heading">
+                        <h4>Our Client Testimonials</h4>
+                        <p>Are you looking for the best autobiography writing services? If yes, then check out our
+                            client testimonials to view how we have prepared autobiographies for them and can do that
+                            for you too.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-slide">
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                    <div class="testimonial-card">
+                        <div class="testimonial-header">
+                            <div class="img-box testi-img">
+                                <img src="assets/images/testi-profile.png" alt="">
+                            </div>
+                            <div class="testimonial-header-content">
+                                <h6>Dorothy Matthews</h6>
+                                <div class="rating">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p>“Sharing my life story felt challenging, but Books Publishing Help made the process
+                            empowering. My ghostwriter was a patient listener and a talented storyteller. She assisted
+                            me in writing content as per my memories and crafted an inspiring and honest narrative.
+                            Kudos to their whole team!”</p>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                    <div class="testimonial-card">
+                        <div class="testimonial-header">
+                            <div class="img-box testi-img">
+                                <img src="assets/images/testi-profile.png" alt="">
+                            </div>
+                            <div class="testimonial-header-content">
+                                <h6>John Davidson</h6>
+                                <div class="rating">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p>“As a war veteran, I wanted to record my experiences for my family, but the idea of writing
+                            felt daunting. But Books Publishing Help came to my rescue! They assigned a ghostwriter with
+                            genuine empathy which relaxed me. He helped me narrate my experiences with sensitivity. ”
+                        </p>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                    <div class="testimonial-card">
+                        <div class="testimonial-header">
+                            <div class="img-box testi-img">
+                                <img src="assets/images/testi-profile.png" alt="">
+                            </div>
+                            <div class="testimonial-header-content">
+                                <h6>Gregory Harris</h6>
+                                <div class="rating">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p>“I am a renowned scientist and wanted to narrate my experiences and life story. A friend told
+                            me about Books Publishing Help’s autobiography writing services. Their writer understood the
+                            scientific components of my work and translated them into a captivating book for a huge
+                            audience. I am happy with the final manuscript!”</p>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                    <div class="testimonial-card">
+                        <div class="testimonial-header">
+                            <div class="img-box testi-img">
+                                <img src="assets/images/testi-profile.png" alt="">
+                            </div>
+                            <div class="testimonial-header-content">
+                                <h6>Haylie Dorwart</h6>
+                                <div class="rating">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p>“Lorem ipsum dolor sit amet consectetur. Purus amet lectus porttitor donec facilisi.
+                            Tristique mauris lacus nulla elementum faucibus sit eget ut et. Blandit donec posuere et sed
+                            adipiscing sagittis. gravida ornare eu faucibus non et tellus quam. Non commodo nascetur”
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End section -->
+
+
+
+    <!-- faqs sec -->
+    <section class="faqs">
+        <div class="bg-image">
+            <div class="container">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-xl-8 col-lg-8 col-md-8">
+                        <div class="center-heading">
+                            <h3>Frequently Asked Questions</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-xl-10 col-lg-10 col-md-10">
+                        <div class="faqs-sec">
+                            <div class="accordion" id="accordionExample">
+                                <div class="accordion-item">
+                                    <h4 class="accordion-header" id="headingSeven">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseSeven" aria-expanded="true"
+                                            aria-controls="collapseSeven">
+                                            How can I make sure that my story can make a good autobiography?
+                                        </button>
+                                    </h4>
+                                    <div id="collapseSeven" class="accordion-collapse collapse show"
+                                        aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <p>Every story is valuable and has the power to impress and resonate with
+                                                the audiences. So, you can rest assured that your story will be engaging
+                                                enough to be converted into an autobiography.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h4 class="accordion-header" id="headingEight">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseEight"
+                                            aria-expanded="false" aria-controls="collapseEight">
+                                            Can I hire you if I don’t have writing experience?
+                                        </button>
+                                    </h4>
+                                    <div id="collapseEight" class="accordion-collapse collapse"
+                                        aria-labelledby="headingEight" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <p>Yes. Our team has specialists who can capture your story and convert your
+                                                experiences into a gripping narrative. </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h4 class="accordion-header" id="headingNine">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseNine"
+                                            aria-expanded="false" aria-controls="collapseNine">
+                                            Will I have control over the final product?
+
+                                        </button>
+                                    </h4>
+                                    <div id="collapseNine" class="accordion-collapse collapse"
+                                        aria-labelledby="headingNine" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <p>Yes. We will collaborate with you on the project which involves sharing
+                                                memories, offering feedback on drafts, and guaranteeing the final
+                                                product shows your voice and vision.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h4 class="accordion-header" id="headingTen">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseTen"
+                                            aria-expanded="false" aria-controls="collapseTen">
+                                            Will I have the copyright of the autobiography?
+
+                                        </button>
+                                    </h4>
+                                    <div id="collapseTen" class="accordion-collapse collapse"
+                                        aria-labelledby="headingTen" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <p>Yes. We will give you the copyright and complete credit of the final
+                                                manuscript.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h4 class="accordion-header" id="headingEleven">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseEleven"
+                                            aria-expanded="false" aria-controls="collapseEleven">
+                                            Should I have all my memories completely organized before beginning?
+
+                                        </button>
+                                    </h4>
+                                    <div id="collapseEleven" class="accordion-collapse collapse"
+                                        aria-labelledby="headingEleven" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <p>
+                                                No worries! Our team will direct you through the process of piecing
+                                                together your memories. They can also add existing content such as
+                                                images, journals, or letters to develop an extensive document of your
+                                                life.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h4 class="accordion-header" id="headingTwelve">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseTwelve"
+                                            aria-expanded="false" aria-controls="collapseTwelve">
+                                            What will you do with the manuscript after you have written it?
+                                        </button>
+                                    </h4>
+                                    <div id="collapseTwelve" class="accordion-collapse collapse"
+                                        aria-labelledby="headingTwelve" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <p>Once our writer completes the manuscript as per your requirements, you
+                                                will have full control over what to do next.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end -->
+
+
+
+    <!-- Get Quote -->
+    <section class="get-quote">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-8 col-lg-8 col-md-10">
+                    <div class="center-heading">
+                        <h3>Get In Touch</h3>
+                        <p>Our team of talented and dedicated ebook writers can help you craft a fine ebook. So, feel
+                            free to reach out to us and get high-quality work!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="get-quote-bg">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-xl-6 col-lg-6 col-md-6">
+                        <div class="left-col">
+                            <h3>Contact Information</h3>
+                            <div class="info-innner">
+                                <img src="assets/images/phone-icon.png" alt="">
+                                <span><a href="tel:(213) 291-8006">(213) 291-8006</a></span>
+                            </div>
+                            <div class="info-innner">
+                                <img src="assets/images/email-icon.png" alt="">
+                                <span><a
+                                        href="mailto:info@bookspublishinghelp.com">info@bookspublishinghelp.com</a></span>
+                            </div>
+                            <div class="info-innner">
+                                <img src="assets/images/map-icon.png" alt="">
+                                <span>7901 4th St N # 21187 St. Petersburg, FL 33702</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6">
+                        <div class="right-col">
+                            <form method="POST" action="https://bookspublishinghelp.com/signup" class="needs-validation"
+                                novalidate>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label>Your Name*</label>
+                                            <input type="text" class="form-control" name="name" pattern="[A-Za-z ]+"
+                                                placeholder="Enter your name" required="">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label>Your Email*</label>
+                                            <input type="email" class="form-control" name="email"
+                                                pattern="[^\s@]+@[a-zA-Z]+[^0-9@]+\.[cC][oO][mM]$"
+                                                placeholder="Enter email here" required="">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label>Contact No*</label>
+                                            <input type="number" class="form-control" name="phone"
+                                                onkeypress="if(this.value.length==12) return false;"
+                                                placeholder="Enter Contact No" required="">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label>Message</label>
+                                            <textarea class="form-control"
+                                                onkeypress="if(this.value.length==250) return false;" name="message"
+                                                rows="3" cols="50" placeholder="Enter Your Message"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 text-end">
+                                        <button type="submit" class="btn btn-theme mt-4">Submit</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> <!-- end -->
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-4 col-lg-4 col-md-12">
+                    <div class="footer-logo">
+                        <a href="index.html" class="footer-logo-img"><img src="assets/images/logo.png"
+                                width="200" /></a>
+                        <p>Books Publishing Help has a creative and passionate team of ebook writers, and editors
+                            dedicated to helping you translate your ideas into engaging content.
+                        </p>
+                        <div class="social">
+                            <p class="mb-0">
+                                <a target="_blank" aria-label="Facebook" href="#"><i
+                                        class="fa fa-facebook-official"></i></a>
+                                <a target="_blank" aria-label="Youtube" href="#"><i class="fa fa-linkedin"></i></a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-2 col-md-12">
+                    <div class="footer-links">
+                        <h6>Quick Links</h6>
+                        <ul class="list-unstyled">
+                            <li><a href="index.html"> Home</a></li>
+                            <li><a href="about-us.html"> About Us</a></li>
+                            <!-- <li><a href="#"> Testimonial</a></li> -->
+                            <li><a href="contact-us.html"> Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-12">
+                    <div class="footer-links">
+                        <h6>Contact</h6>
+                        <ul class="list-unstyled">
+                            <li><a href="tel:(213) 291-8006"><img src="assets/images/phone.webp" alt="">(213)
+                                    291-8006</a></li>
+                            <li><a href="mailto:info@bookspublishinghelp.com"><img src="assets/images/email.webp"
+                                        alt="">
+                                    info@bookspublishinghelp.com</a></li>
+                            <li><a href="#"><img src="assets/images/location.webp" alt="">7901 4th St N # 21187 St.
+                                    Petersburg, FL 33702</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-12">
+                    <div class="footer-links">
+                        <h6>Subscribe Us</h6>
+                        <p>Stay updated with our latest news. We promise</p>
+                        <form method="POST" action="https://bookspublishinghelp.com/subscribe">
+                            <div class="input-group mt-3 mb-3">
+                                <input type="text" class="form-control" placeholder="Your Email" aria-label="Your Email"
+                                    aria-describedby="Your Email" name="email"
+                                    pattern="[^\s@]+@[a-zA-Z]+[^0-9@]+\.[cC][oO][mM]$" required="">
+                                <button type="submit"><i class="fa fa-send-o"></i></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end -->
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-xl-12 col-lg-12 col-md-12">
+                    <div class="footer-bootom-links">
+                        <p>Copyright © 2024-2025 . Books Publishing Help . All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Website JS -->
+    <script src="assets/js/jquery.js"></script>
+    <script src="../cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.2/umd/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- Slick Carousel JS-->
+    <script src="../cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+        var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+        (function () {
+            var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/66996914becc2fed692746df/1i33k4uvv';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
+    </script>
+    <!--End of Tawk.to Script-->
+
+    <!-- Offcanvas Side Bar -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+            <a href="#" class="footer-logo-img"><img src="assets/images/logo.png" alt="logo"></a>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                    <a class="nav-link " href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="about-us.html">About Us</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Services <i class="fa fa-angle-down"></i>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="book-editing.html">Book Editing</a></li>
+                        <li><a class="dropdown-item" href="book-marketing.html">Book Marketing</a></li>
+                        <li><a class="dropdown-item" href="book-publishing.html">Book Plublishing</a></li>
+                        <li><a class="dropdown-item" href="book-writing.html">Book Writing</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Genre <i class="fa fa-angle-down"></i>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="fiction-ghostwriting.html">Fiction GhostWriting</a></li>
+                        <li><a class="dropdown-item" href="non-fiction-ghostwriting.html">Non Fiction GhostWriting</a>
+                        </li>
+                        <li><a class="dropdown-item" href="autobiography.html">Autobiography</a></li>
+                        <li><a class="dropdown-item" href="novel-writing.html">Novel Writing</a></li>
+                        <li><a class="dropdown-item" href="kids-book-writing.html">Kids Book</a></li>
+                        <li><a class="dropdown-item" href="mystery-book-writing.html">Mystery Book</a></li>
+                        <li><a class="dropdown-item" href="self-help-book-writing.html">Self Help</a></li>
+                    </ul>
+                </li>
+                <!-- <li class="nav-item">
+                <a class="nav-link " href="#">
+                    Testimonial
+                </a>
+            </li> -->
+                <li class="nav-item">
+                    <a class="nav-link " href="contact-us.html">
+                        Contact Us
+                    </a>
+                </li>
+            </ul>
+            <div class="mt-3">
+                <a href="tel:1-214-865-7687" class="btn btn-theme">1-214-865-7687</a>
+            </div>
+        </div>
+    </div>
+    <!-- end -->
+
+
+</body>
+
+
+</html>
